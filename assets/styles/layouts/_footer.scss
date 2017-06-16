@@ -1,0 +1,79 @@
+@import "../helpers/variables";
+
+.footer {
+  background-color: $primary;
+  color: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media (min-width: $screen-xs-min) {
+    text-align: left;
+  }
+  .brand-footer > img {
+    max-width: 200px;
+  }
+  .footer-bottom {
+    margin-top: 20px;
+    @media (min-width: $screen-sm-min) {
+      margin-top: 60px;
+    }
+  }
+  .footer-menu {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        margin-right: 15px;
+        @media (min-width: $screen-xs-min) {
+          display: inline-block;
+        }
+        a {
+          color: #ffffff;
+          display: block;
+          padding: 5px 0;
+          @media (min-width: $screen-xs-min) {
+            padding: 0;
+          }
+          &:hover, &:focus {
+            color: $accent;
+          }
+        }
+      }
+    }
+  }
+  .footer-copyright {
+    font-size: 14px;
+    margin-top: 20px;
+    @media (min-width: $screen-sm-min) {
+      margin-top: 0;
+    }
+  }
+  .footer-signature {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #898989;
+    @media (min-width: $screen-sm-min) {
+      text-align: right;
+      margin-top: 0;
+    }
+    a {
+      color: #fff;
+    }
+  }
+  .footer-tagline {
+    font-size: 1.125rem;
+    margin-top: 20px;
+  }
+  .footer-terms {
+    margin-top: 15px;
+    a {
+      color: #898989;
+      font-size: 13px;
+      margin-right: 10px;
+      &:hover,
+      &:focus {
+        border-bottom: none;
+      }
+    }
+  }
+}

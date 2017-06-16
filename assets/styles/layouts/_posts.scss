@@ -1,0 +1,82 @@
+@import "../helpers/variables";
+@import "../helpers/mixins";
+
+.post-box {
+  padding-bottom: 40px;
+  @media (min-width: $screen-sm-min) {
+    min-height: 525px;
+  }
+  @media (min-width: $screen-lg-min) {
+    min-height: 500px;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  .post-inner {
+    padding: 20px;
+  }
+  &::after,
+  &::before {
+    content: ' ';
+    position: absolute;
+    bottom: 40px;
+    left: 15px;
+    width: calc(100% - 30px);
+    display: block;
+    border-bottom: 1px solid #dde5ed;
+  }
+  &::before {
+    border-bottom: 5px solid $accent;
+    z-index: 1;
+    bottom: 35px;
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s,-webkit-transform .3s;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+  }
+  &:hover {
+    &::before {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+  }
+  .post-media {
+    @media (min-width: $screen-sm-min) {
+      min-height: 145px;
+      max-height: 145px;
+    }
+    @media (min-width: $screen-sm-min) {
+      min-height: 125px;
+      max-height: 125px;
+    }
+    @media (min-width: $screen-lg-min) {
+      min-height: 150px;
+      max-height: 150px;
+    }
+  }
+}
+
+.nav-links {
+  text-align: center;
+  margin-top: 40px;
+  .nav-previous,
+  .nav-next {
+    display: inline-block;
+    margin: 0 5px;
+    a {
+      border: 2px solid $accent;
+      padding: 12px 30px;
+      @include transition(all, .3s, ease);
+      &:hover,
+      &:focus {
+        background-color: $accent;
+        border: 2px solid $accent;
+        color: #ffffff;
+      }
+    }
+  }
+}

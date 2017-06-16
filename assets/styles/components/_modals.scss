@@ -1,0 +1,12 @@
+@import "../helpers/mixins";
+@import "../helpers/variables";
+
+.modal-content {
+  @include box-shadow(0,0,0,0);
+  border: none;
+  @include border-radius(3px);
+}
+
+.modal-header {
+  border-bottom: none;
+}

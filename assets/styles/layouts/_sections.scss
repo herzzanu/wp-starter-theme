@@ -1,0 +1,62 @@
+@import "../helpers/mixins";
+@import "../helpers/variables";
+
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.section-md {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.not-found-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  @media (min-width: $screen-sm-min) {
+    padding-top: 180px;
+    padding-bottom: 180px;
+  }
+  h1 {
+    font-size: 2.25rem;
+    margin-bottom: 40px;
+    @media (min-width: $screen-sm-min) {
+      font-size: 3rem;
+    }
+  }
+}
+
+.section-border {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.section-action {
+  text-align: center;
+  background-color: $light-gray;
+  .title-action {
+    font-size: 2rem;
+    font-family: $font-medium;
+    color: $primary;
+  }
+  .subtitle-action {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.section-light {
+  background-color: $light-gray;
+}
+
+.section-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+}

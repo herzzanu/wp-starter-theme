@@ -1,0 +1,58 @@
+@import "../helpers/variables";
+@import "../helpers/mixins";
+
+.btn {
+  font-size: 1.125rem;
+  padding: 15px 40px;
+  color: #fff;
+  border: none;
+  @include border-radius(3px);
+  @include transition(background-color, .2s, ease);
+  &:hover,
+  &:focus {
+    color: #fff;
+    border: none;
+  }
+}
+
+.btn-md {
+  font-size: 1.25rem;
+  font-family: $font-medium;
+  padding: 15px 60px;
+}
+
+.btn-icon {
+  padding-right: 25px;
+  i {
+    vertical-align: middle;
+    padding-left: 10px;
+  }
+}
+
+.btn-primary {
+  @extend .btn;
+  background-color: $primary;
+  &:hover,
+  &:focus {
+    background-color: $primary-hover;
+  }
+}
+
+.btn-accent {
+  @extend .btn;
+  background-color: $accent;
+  &:hover,
+  &:focus {
+    background-color: $accent-hover;
+  }
+}
+
+.btn-white {
+  @extend .btn;
+  background-color: #fff;
+  color: #000;
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}

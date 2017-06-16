@@ -1,0 +1,34 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/main.js",
+        "scripts/custom.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "animate.css": {
+      "bower": ["animate.css"],
+      "main": true
+    },
+    "jquery.js": {
+      "bower": ["jquery"],
+      "main": true
+    },
+    "customizer.js": {
+      "files": [
+        "scripts/customizer.js"
+      ],
+      "main": true
+    }
+  },
+  "config": {
+    "devUrl": "talentsec.dev"
+  }
+}

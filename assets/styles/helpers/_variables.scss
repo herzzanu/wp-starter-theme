@@ -1,0 +1,21 @@
+// Icons font path
+$icon-font-path: "../fonts/";
+$ionicons-font-path: "../fonts/";
+
+//Fonts
+$font-regular: FFMarkWebPro;
+$font-medium: FFMarkWebProMedium;
+$font-bold: FFMarkWebProBold;
+
+// Grid settings
+$main-sm-columns: 12;
+$sidebar-sm-columns: 4;
+
+// Colors
+$primary: #0A0A28;
+$accent: #011EFF;
+$dark-gray: #42526E;
+$light-gray: #F6F9FD;
+
+$primary-hover: lighten($primary, 10%);
+$accent-hover: lighten($accent, 5%);

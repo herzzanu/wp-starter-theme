@@ -1,0 +1,58 @@
+@import "../helpers/mixins";
+@import "../helpers/variables";
+
+.navbar-right {
+  .dropdown-menu {
+    @media (min-width: $screen-sm-min) {
+      right: auto;
+      left: 13px;
+    }
+  }
+  .dropdown-toggle {
+    .caret {
+      display: none;
+    }
+  }
+}
+
+.dropdown-menu {
+  top: 46px;
+  border: 1px solid #E5E5E5;
+  border-radius: 0;
+  @include box-shadow(0,0,0,0);
+  & > li > a {
+    padding: 6px 20px;
+    &:hover,
+    &:focus {
+      border: none;
+    }
+  }
+  & >.active > a {
+    background-color: #fff;
+    color: $accent;
+    &:hover,
+    &:focus {
+      background-color: #fff;
+      color: $accent;
+    }
+  }
+}
+
+.navbar-white,
+.navbar-white-header {
+  .dropdown-menu {
+    top: 58px;
+  }
+}
+
+@media (max-width: $screen-sm-max) {
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+}

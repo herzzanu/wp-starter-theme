@@ -1,0 +1,29 @@
+@import "../helpers/variables";
+
+.contact-details {
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .title {
+    font-size: 1.125rem;
+    font-family: $font-bold;
+    color: $primary;
+    margin-bottom: 10px;
+  }
+  .info {
+    margin-bottom: 10px;
+    &.info-last {
+      margin-bottom: 20px;
+    }
+    a {
+      color: $dark-gray;
+    }
+  }
+}
+
+.contact-form-title {font-size: 1.125rem;
+  font-family: $font-bold;
+  color: $primary;
+  margin-bottom: 5px;
+}
